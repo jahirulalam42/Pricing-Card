@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Billing Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="mt-2">
+        <div>
+            <div class="sm:flex sm:flex-col sm:align-center pt-6">
+                <div class="relative self-center bg-slate-200 rounded-lg p-0.5 flex">
+                    <button type="button" id="monthly-button"
+                        class="relative w-1/2 rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 bg-slate-50 border-slate-50 text-black shadow-sm">Monthly billing
+                    </button>
+                    <button type="button" id="yearly-button"
+                        class="ml-0.5 relative w-1/2 border rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 border-transparent text-black">Yearly billing
+                    </button>
+                </div>
+                
+
+                <div
+                    class="mt-2 space-y-1 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
+                    <div class="plan-card border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200 bg-sky-100">
+                        <div class="p-6">
+                            <h2 class="text-xl leading-6 font-bold text-black">Starter</h2>
+                            <p class="mt-2 text-base text-black leading-tight">For new makers who want to fine-tune and test an idea.</p>
+                            <p class="mt-8">
+                                <span class="plan-price text-4xl font-bold text-black tracking-tighter monthly-price">$0</span>
+                                <span class="plan-price text-4xl font-bold text-black tracking-tighter yearly-price hidden">$40</span>
+                                <span class="text-base font-medium text-slate-500">/mo</span>
+                            </p>
+                            <a href="/sign-up"
+                            class="mt-8 block w-full bg-sky-700 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-sky-800 hover:shadow-lg hover:text-white">Join as a Starter</a>
+                        </div>
+                        <div class="pt-6 pb-8 px-6">
+                            <h3 class="text-sm font-bold text-black tracking-wide uppercase">What's included</h3>
+                            <ul role="list" class="mt-4 space-y-3">
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">1 landing page included</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">1,000 visits/mo</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Access to all UI blocks</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">50 conversion actions included</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">5% payment commission</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Real-time analytics</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plan-card border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200 bg-sky-100">
+                        <div class="p-6">
+                            <h2 class="text-xl leading-6 font-bold text-black">Superior</h2>
+                            <p class="mt-2 text-base text-black leading-tight">For creators with multiple ideas who want to efficiently test them.</p>
+                            <p class="mt-8">
+                                <span class="plan-price text-4xl font-bold text-black tracking-tighter monthly-price">$8</span>
+                                <span class="plan-price text-4xl font-bold text-black tracking-tighter yearly-price hidden">$80</span>
+                                <span class="text-base font-medium text-slate-500">/mo</span>
+                            </p><a href="/sign-up"
+                                class="mt-8 block w-full bg-sky-700 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-sky-800 hover:shadow-lg hover:text-white">Join as a Superior</a>
+                        </div>
+                        <div class="pt-6 pb-8 px-6">
+                            <h3 class="text-sm font-bold text-black tracking-wide uppercase">What's included</h3>
+                            <ul role="list" class="mt-4 space-y-3">
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">3 landing pages included</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">10,000 visits/mo</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Access to all UI blocks</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">100 conversion actions included</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">2.5% payment commission</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Real-time analytics</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plan-card border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200 bg-sky-100">
+                        <div class="p-6">
+                            <h2 class="text-xl leading-6 font-bold text-black">Premium</h2>
+                            <p class="mt-2 text-base text-black leading-tight">For teams and businesses that want to scale their presence.</p>
+                            <p class="mt-8">
+                                <span class="plan-price text-4xl font-bold text-black tracking-tighter monthly-price">$16</span>
+                                <span class="plan-price text-4xl font-bold text-black tracking-tighter yearly-price hidden">$160</span>
+                                <span class="text-base font-medium text-slate-500">/mo</span>
+                            </p><a href="/sign-up"
+                                class="mt-8 block w-full bg-sky-700 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-sky-800 hover:shadow-lg hover:text-white">Join as a Premium</a>
+                        </div>
+                        <div class="pt-6 pb-8 px-6">
+                            <h3 class="text-sm font-bold text-black tracking-wide uppercase">What's included</h3>
+                            <ul role="list" class="mt-4 space-y-3">
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Unlimited landing pages</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">100,000 visits/mo</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Access to all UI blocks</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Unlimited conversion actions</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">1.5% payment commission</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-sky-700" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M5 12l5 5l10 -10"></path>
+                                    </svg>
+                                    <span class="text-base text-slate-700">Advanced analytics and reports</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="pricing.js"></script>
+</html>
