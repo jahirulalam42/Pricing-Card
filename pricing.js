@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const monthlyPriceElements = document.querySelectorAll(".monthly-price");
-  const monthlyHeadElements = document.querySelectorAll(".monthly-head");
   const yearlyPriceElements = document.querySelectorAll(".yearly-price");
-  const yearlyHeadElements = document.querySelectorAll(".yearly-head");
   const monthlyButton = document.getElementById("monthly-button");
   const yearlyButton = document.getElementById("yearly-button");
 
@@ -25,14 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   monthlyButton.addEventListener("click", () => {
-    // Show monthly heads and hide yearly heads
-    monthlyHeadElements.forEach((element) => {
-      element.classList.remove("hidden");
-    });
-    yearlyHeadElements.forEach((element) => {
-      element.classList.add("hidden");
-    });
-
     // Show monthly prices and hide yearly prices
     monthlyPriceElements.forEach((element) => {
       element.classList.remove("hidden");
@@ -46,14 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   yearlyButton.addEventListener("click", () => {
-    // Show yearly Heads and hide monthly Heads
-    yearlyHeadElements.forEach((element) => {
-      element.classList.remove("hidden");
-    });
-    monthlyHeadElements.forEach((element) => {
-      element.classList.add("hidden");
-    });
-
     // Show yearly prices and hide monthly prices
     yearlyPriceElements.forEach((element) => {
       element.classList.remove("hidden");
