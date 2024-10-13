@@ -25,3 +25,20 @@ To get a local copy of this project up and running, follow these steps:
 
    ```bash
    git clone https://github.com/jahirulalam42/Pricing-Card.git
+
+2. Navigate to the project directory:
+
+  ```bash
+    cd Pricing-Card
+
+3. Open the **HTML file:** Open index.html in your favorite web browser to view the project.
+
+## Usage
+
+ - Click the Monthly billing button to view the monthly pricing.
+ - Click the Yearly billing button to switch to the yearly pricing.
+ - The selected option will be highlighted, and the corresponding prices will be displayed.
+
+ ## Deployment
+
+ The project is deployed on Vercel.
