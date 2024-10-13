@@ -31,7 +31,7 @@ To get a local copy of this project up and running, follow these steps:
   ```bash
     cd Pricing-Card
 
-3. Open the **HTML file:** Open index.html in your favorite web browser to view the project.
+3. Open the **HTML file**: Open index.html in your favorite web browser to view the project.
 
 ## Usage
 
